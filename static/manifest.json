@@ -1,19 +1,13 @@
 {
 	"manifest_version": 3,
-	"name": "Extension name",
+	"name": "Max YT",
 	"version": "0.0.1",
-	"description": "Extension description",
+	"description": "Hide 3rd video in Youtube's suggestions",
 	"permissions": ["activeTab", "scripting"],
 	"content_scripts": [
 		{
 			"js": ["contentScript.js"],
-			"matches": ["<all_urls>"]
-		}
-	],
-	"web_accessible_resources": [
-		{
-			"resources": ["some-resource.js"],
-			"matches": ["<all_urls>"]
+			"matches": ["https://www.youtube.com/watch*"]
 		}
 	]
 }
