@@ -5,7 +5,6 @@ import webpack from "webpack";
 const config: webpack.Configuration = {
 	entry: {
 		contentScript: "./src/content-script.ts",
-		background: "./src/background.ts",
 	},
 	resolve: {
 		extensions: [".ts", ".js"],
