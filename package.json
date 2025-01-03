@@ -1,0 +1,29 @@
+{
+	"name": "extension-webpack-template",
+	"version": "1.0.0",
+	"description": "Starter template for creating a browser extension using webpack and typescript",
+	"scripts": {
+		"start": "npm run dev",
+		"dev": "webpack --watch --config webpack.dev.ts",
+		"build": "webpack --config webpack.prod.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@tsconfig/recommended": "^1.0.8",
+		"@types/chrome": "^0.0.279",
+		"@types/firefox-webext-browser": "^120.0.4",
+		"@types/node": "^22.9.0",
+		"concurrently": "^9.1.0",
+		"copy-webpack-plugin": "^12.0.2",
+		"css-loader": "^7.1.2",
+		"style-loader": "^4.0.0",
+		"ts-loader": "^9.5.1",
+		"ts-node": "^10.9.2",
+		"typescript": "~5.6.2",
+		"webpack": "^5.96.1",
+		"webpack-cli": "^5.1.4",
+		"webpack-merge": "^6.0.1"
+	}
+}

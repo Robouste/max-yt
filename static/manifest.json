@@ -1,0 +1,19 @@
+{
+	"manifest_version": 3,
+	"name": "Extension name",
+	"version": "0.0.1",
+	"description": "Extension description",
+	"permissions": ["activeTab", "scripting"],
+	"content_scripts": [
+		{
+			"js": ["contentScript.js"],
+			"matches": ["<all_urls>"]
+		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": ["some-resource.js"],
+			"matches": ["<all_urls>"]
+		}
+	]
+}
